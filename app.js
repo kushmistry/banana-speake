@@ -6,7 +6,7 @@ const serverUrl = "https://api.funtranslations.com/translate/minion.json";
 const mockSereverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" 
 
 const createUrl = (text) => {
-  return `${mockSereverUrl}?text=${text}`;
+  return `${serverUrl}?text=${text}`;
 };
 
 const btnHandler = () => {

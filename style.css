@@ -1,11 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lato&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #f2c94c;
+    --font-color: #333333;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+.header-section {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section {
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 1rem;
+}
+
+#input-txt {
+    width: 100%;
+    margin-top: 1.5rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+#translate-btn {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    width: 40%;
+    font-size: large;
+    font-size: 1rem;
+    font-family: 'Kalam', cursive;
+    margin-top: 1rem;
+    border: 0px solid black;
+}
+
+#translate-btn:hover {
+    cursor: pointer;
+}
+
+.main-section > p {
+    margin-top: 1rem;
+    color: #474747;
+}
+
 .output-txt {
     border: 1px solid black;
-    width: 80%;
-    height: 20vh;
+    width: 100%;
+    height: 10vh;
+    overflow: auto;
+}
+
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-section > p {
+    width: 600px;
+    margin: auto;
+    color: #474747;
 }
