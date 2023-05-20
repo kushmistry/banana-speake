@@ -15,6 +15,7 @@ const btnHandler = () => {
     .then(json => {
         outputText.innerText = json.contents.translated;
     })
+    .catch(err => alert("Somthin went Wrong with Server!!!"))
 };
 
 tranlateBtn.addEventListener("click", btnHandler);
